@@ -24,10 +24,17 @@
         }
         #logo {
             position: absolute;
-            top: 24px;
+            top: 0px;
             left: 12px;
-            width: 135px;
+            height: 75px;
+            z-index: 1;
         }
+
+        #logo img {
+            width: 100%;
+            height: 100%;
+        }
+
         #navbar {
             position: absolute;
             top: 0;
@@ -98,6 +105,8 @@
             width: 11em;
             padding: 0 0.5em;
             font-size: 0.85em;
+            z-index: 2;
+            background-color: #f8f9fa;
         }
         #sidebar h3 {
             color: #444;
@@ -252,7 +261,7 @@
 <body>
     <div id="header">
         <div id="logo">
-            <a href="#"><img src="https://en.wikipedia.org/static/images/project-logos/enwiki.png" alt="Wikipedia" width="135"></a>
+            <a href="#"><img src="https://en.wikipedia.org/static/images/project-logos/enwiki.png" alt="Wikipedia"></a>
         </div>
         <div id="navbar">
             <ul>
